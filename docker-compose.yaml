@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  # ตั้งชื่อ Service ว่า db (database)
+  db:
+    image: postgres:15-alpine # ใช้ Image Postgres เวอร์ชัน 15 (ตัวเล็ก alpine)
+    container_name: money-tracker-db
+    restart: always
+    ports:
+      - "5433:5432" # เปิดพอร์ต 5432 ให้เครื่องเราคุยกับ Docker รู้เรื่อง
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER} # ชื่อผู้ใช้ (ตั้งเองได้)
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD} # รหัสผ่าน (ตั้งเองได้)
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - ./pg_data:/var/lib/postgresql/data

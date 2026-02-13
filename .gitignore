@@ -1,0 +1,25 @@
+# General / OS
+.env
+node_modules/
+dist/
+build/
+.DS_Store
+*.log
+
+# Database (PostgreSQL / Local)
+pg_data/
+
+# Bun
+bun.lockb
+.bun-build/
+
+# Prisma
+/prisma/*.db
+/prisma/*.db-journal
+
+# Testing
+coverage/
+
+# IDE
+.vscode/
+.idea/

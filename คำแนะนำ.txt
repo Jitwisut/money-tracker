@@ -1,0 +1,1 @@
+แนะนำให้ คลิกไปที่link:https://backend-money-tracker-v6p5.onrender.com/ นี้เพื่อที่จะปลุกBackend ให้ตื่นก่อนเข้าใช้งาน frontend เพราะผม deloy Backend บน render แบบ Free ทำให้เมื่อ Backend เมื่อไม่มีการใช้งานทาง reder จะทำงาน Sleep mode ซึ่งมันอาจจะใช้เวลาปลุกตัวเอง ประมาณ 30-60วินาที หาก มันปลุกแล้วไม่ยอมอื่นอาจจะต้อง Restart service ครับ
